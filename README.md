@@ -1,8 +1,3 @@
-# portfolio-simple-website
-Here is a **clean and professional description** you can paste directly into your GitHub README file for your simple portfolio website built using **HTML & basic CSS**:
-
----
-
 ## 📌 Personal Portfolio Website
 
 This is a **simple and responsive personal portfolio website** built using **HTML and basic CSS**.
@@ -28,9 +23,3 @@ The main goal of this project is to create a personal online presence using only
 * Practice building a website from scratch
 * Learn the fundamentals of web layout & design
 * Create a portfolio to share my work online
-
-### 🌐 Live Demo
-
-*(Add your live link here if hosted on GitHub Pages or elsewhere)*
-
----
