@@ -51,11 +51,16 @@
             border-radius: 3px;
             font-weight: bold;
             transition: background-color 0.3s ease;
+            border-radius: 10px;
         }
 
         a:hover {
             background-color: #e6482e;
         }
+        .audio::-webkit-media-controls-panel{
+            background:linear-gradient(to right, rgb(47, 123, 255),rgb(255, 0, 170));
+        }
+        
     </style>
 </head>
 
@@ -71,7 +76,10 @@
                 Go Back to Home
             </a>
         </div>
-        <img style="width: 200px;" src="images/download.png" alt="">
+        <img style="width: 200px;" src="images/download.png" alt="jency">
+        <audio class="audio" controls>
+            <source src="audio/cow-mooing-type-04-293297.mp3">
+        </audio>
     </div>
 </body>
 
