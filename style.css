@@ -127,7 +127,7 @@ body{
     
 }
 body{
-            background: linear-gradient(to bottom, pink,blue);
+            background: linear-gradient(to bottom, pink,rgb(45, 45, 139));
             
     }
     html,body{
