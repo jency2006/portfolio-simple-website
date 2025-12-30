@@ -126,3 +126,8 @@ body{
     }
     
 }
+body{
+            background: linear-gradient(to bottom, pink,blue);
+            
+    }
+    

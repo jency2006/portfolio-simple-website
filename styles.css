@@ -83,3 +83,12 @@
 .dot.active {
   background-color: white;
 }
+#bio{
+  color: white;
+  text-decoration: none;
+  background:linear-gradient(rgb(255, 0, 183),rgb(241, 164, 21));
+  padding: 6px;
+  border-radius: 7px;
+  position: relative;
+  top: 6px;
+}
