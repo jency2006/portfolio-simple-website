@@ -130,4 +130,7 @@ body{
             background: linear-gradient(to bottom, pink,blue);
             
     }
+    html,body{
+        height: 100%;
+    }
     
