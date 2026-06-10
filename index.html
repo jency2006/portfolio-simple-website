@@ -1,104 +1,444 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>jency</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/images.png">
+    <meta name="description" content="Jency B - Python Stack Learner | Portfolio showcasing projects, skills, and learning journey">
+    <meta name="keywords" content="Python, JavaScript, Web Development, Portfolio, Developer">
+    <meta name="author" content="Jency B">
+    <title>Jency B - Python Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="section-one">
-            <h2 class="section-one__name">Jency B</h2>
-            <p class="section-one__role">web developer</p>
-            <div style="display: flex;align-items: center;gap: 20px;position: relative;">
-                <a class="section-one__contact" href="exercise.html">contact</a>
-            <a style="position:relative;top: 8px;"  href="https://www.instagram.com/_jen_shi?igsh=MWNuems0cWluY2Z0aw=="><img width="40px" src="images/pngegg.png" alt=""></a>
-            <a id="bio" href="bio.html">Bio data</a>
-            
-                
+    <!-- Particle Background -->
+    <div class="particle-container" id="particleContainer"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Jency B</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#journey" class="nav-link" data-section="journey">Journey</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-       <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img  src="images/cow1.jpg" alt="Image 1" />
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hi, I'm Jency B</span>
+                    </h1>
+                    <p class="hero-subtitle">Python Stack Learner & Web Developer</p>
+                    <p class="hero-description">
+                        Passionate about building web applications and learning full-stack development.
+                        <br><span class="highlight">Currently Learning: JavaScript</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            Get in Touch
+                        </button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                            View My Work
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="80" r="45" class="avatar-circle"/>
+                            <ellipse cx="100" cy="180" rx="60" ry="40" class="avatar-body"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
         </div>
-        <div class="slide">
-          <img src="images/cow2.jpg" alt="Image 2" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card fade-in">
+                    <div class="about-icon">🎯</div>
+                    <h3>My Goal</h3>
+                    <p>
+                        I'm on an exciting journey to become a proficient Full Stack Python Developer.
+                        My passion lies in creating intuitive web applications that solve real-world problems.
+                    </p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="about-icon">💻</div>
+                    <h3>Learning Path</h3>
+                    <p>
+                        Started with Python fundamentals, then expanded to web technologies.
+                        Currently deepening my JavaScript skills to build interactive and dynamic web applications.
+                    </p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="about-icon">🚀</div>
+                    <h3>What Drives Me</h3>
+                    <p>
+                        I'm driven by curiosity and the desire to continuously improve my craft.
+                        I love solving problems, learning new technologies, and collaborating with others.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="slide">
-          <img src="images/cow3.avif" alt="Image 3" />
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🐍</span>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 75%">
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Core programming language, data structures, and fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🎨</span>
+                        <h3>HTML & CSS</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 85%">
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Semantic HTML, modern CSS, animations, and layouts</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">⚡</span>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 60%">
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Currently Learning - DOM manipulation, ES6+, events</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">📱</span>
+                        <h3>Responsive Design</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 80%">
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Mobile-first approach, flexbox, grid, media queries</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔧</span>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 70%">
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Version control, repositories, collaboration workflows</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🎓</span>
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="--skill-level: 85%">
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Algorithm design, debugging, logical thinking</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="slider-btn prev">&#10094;</button>
-      <button class="slider-btn next">&#10095;</button>
-      <div class="dots-container"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Portfolio</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A modern, responsive portfolio showcasing my learning journey and projects.
+                            Built with pure HTML, CSS, and JavaScript with modern animations and effects.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-demo">🔗 Demo</button>
+                            <button class="btn btn-github">💻 GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Calculator</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Python Calculator</h3>
+                        <p class="project-description">
+                            A feature-rich calculator application built with Python.
+                            Supports basic operations, history tracking, and a clean GUI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">GUI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-demo">🔗 Demo</button>
+                            <button class="btn btn-github">💻 GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">To-Do App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">To-Do Application</h3>
+                        <p class="project-description">
+                            A responsive to-do application with task management features.
+                            Features include adding, editing, deleting, and marking tasks as complete.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-demo">🔗 Demo</button>
+                            <button class="btn btn-github">💻 GitHub</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Weather App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">
+                            A weather application that fetches real-time data from weather APIs.
+                            Displays current conditions, forecasts, and weather-based recommendations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-demo">🔗 Demo</button>
+                            <button class="btn btn-github">💻 GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <h2 class="section-title">My Learning Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Started Python</h3>
+                        <p class="timeline-date">Foundation & Fundamentals</p>
+                        <p class="timeline-description">
+                            Began my programming journey with Python. Learned basic syntax, data structures,
+                            functions, and object-oriented programming concepts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Learned HTML & CSS</h3>
+                        <p class="timeline-date">Web Foundation</p>
+                        <p class="timeline-description">
+                            Expanded into web development. Mastered semantic HTML, modern CSS layouts,
+                            responsive design, and animation techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <h3>Currently Learning JavaScript</h3>
+                        <p class="timeline-date">Ongoing</p>
+                        <p class="timeline-description">
+                            Diving deep into JavaScript to build interactive web applications.
+                            Learning ES6+, DOM manipulation, async programming, and modern frameworks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker future"></div>
+                    <div class="timeline-content">
+                        <h3>Future Goal: Full Stack Python Developer</h3>
+                        <p class="timeline-date">Next Phase</p>
+                        <p class="timeline-description">
+                            Plan to master backend frameworks like Django and Flask, databases,
+                            APIs, and deployment to become a complete full-stack developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities.
+                        Feel free to reach out if you want to collaborate or just say hello!
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" title="Email">
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Jency B</h4>
+                <p>Python Stack Learner & Web Developer</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="#" title="GitHub">GH</a>
+                    <a href="#" title="LinkedIn">LI</a>
+                    <a href="#" title="Twitter">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jency B. All rights reserved. | Designed & Developed with 💖</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Loading Animation -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
     </div>
-    
-        <div class="section-two">
-            <h1 style="text-align: center;" class="section-two__title">About Me</h1>
-            <p class="section-two__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quo deserunt
-                magni explicabo nostrum modi
-                qui aut, vel
-                animi, dolor ab in quas unde expedita, consequuntur delectus saepe suscipit sapiente ad enim odit odio
-                dignissimos
-                deleniti! Quod labore, accusantium, voluptatibus architecto iure provident ut facilis ea excepturi
-                dignissimos
-                similique maiores quis reiciendis aliquid tempora eos, optio quos non debitis? Distinctio, eum sed
-                aperiam
-                exercitationem a, illum ipsa vel sapiente quis voluptatem explicabo? Soluta alias amet nobis rem magni
-                officia sit
-                exercitationem distinctio provident consequuntur. Quidem aspernatur distinctio delectus hic eligendi ea
-                minima
-                mollitia adipisci rerum doloremque? Et cum corporis laudantium.
-            </p>
-        </div>
 
-        <div class="flex">
-            <div class="section-three">
-            <h2 class="section-three__title">My Interest</h2>
-            <ul class="section-three__desc">
-                <li>Mooku Mutta Tinrathu,</li>
-                <li>24 hours toongurathu</li>
-                <li>maadu pola moo muu nu kathurathu</li>
-                <li>Ethukeduthalum sanda podurathu,</li>
-                <li>Bike pathi oru mannum theriyathu <br> ana MT15 pidikum.</li>
-            </ul>
-        </div>
-        <div class="section-four">
-            <h2 class="section-four__title">My Projects</h2>
-            <ul class="section-four__desc">
-                <li>
-                    
-                    <p>I made lemon juice with lot of SARBATH</p>
-                </li>
-                <li>
-                    
-                    <p>I trained Tamannah for the jailer movie dance because she literally begged.</p>
-                </li>
-                <li>
-                    <p>As a cow I made Sharjah in PALANCHII VELLAM,it was really helpful for me-and tasty too,</p>
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class="section-five">
-            <p class="section-five__title">social media:
-                <a href="https://www.instagram.com/_jen_shi?igsh=MWNuems0cWluY2Z0aw==">instagram</a></p>
-            <p class="section-five__desc">&copy;jency</p>
-        </div>
-
-
-    </div>
     <script src="script.js"></script>
 </body>
-
-
 </html>
