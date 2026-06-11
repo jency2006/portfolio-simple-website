@@ -2474,7 +2474,7 @@ body.light-mode footer {
 /* ============================================
    FLOATING ACTION BUTTON
    ============================================ */
-.fab {
+.fab-container {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
